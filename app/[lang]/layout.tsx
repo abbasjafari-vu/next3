@@ -19,4 +19,4 @@ export default function languageLayout(props: Props) {
   );
 }
 
-const Main = tw.main`flex flex-col min-h-screen`;
+const Main = tw.main`flex flex-col min-h-screen w-screen overflow-x-hidden`;
