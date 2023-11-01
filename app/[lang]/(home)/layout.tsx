@@ -1,6 +1,7 @@
 import { categories } from "_appData";
 import Button from "_components/Button";
 import Header from "_components/Header";
+import HomeContainer from "_components/HomeContainer";
 import MyDocuments from "_components/MyDocuments";
 import { Children, Params } from "_types";
 import React from "react";
@@ -13,7 +14,8 @@ export default function HomeLayout(props: Props) {
   return (
     <>
       <Header />
-      {children}
+
+      <HomeContainer>{children}</HomeContainer>
       <nav className="mt-auto">
         <NavContainer>
           <MyDocuments />
@@ -31,4 +33,4 @@ export default function HomeLayout(props: Props) {
   );
 }
 
-const NavContainer = tw.div`max-w-content py-5 grid grid-cols-2 sm:grid-cols-3 md:flex items-center gap-2`;
+const NavContainer = tw.div`max-w-content py-5 grid grid-cols-2 sm:grid-cols-3 md:flex flex-wrap items-center gap-2`;

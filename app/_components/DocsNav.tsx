@@ -41,6 +41,7 @@ export default function DocsNav() {
                       ? "bg-primary-dark2 rounded-s-full px-5 -me-4"
                       : ""
                   }`}
+                  onClick={() => setOpenMenu(false)}
                 >
                   {title}
                 </Link>

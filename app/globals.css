@@ -15,6 +15,14 @@
     border-radius: 2em;
     @apply bg-primary-green;
   }
+  li {
+    position: relative;
+  }
+  .list-inside li::before {
+    content: "";
+    @apply absolute w-1.5 aspect-square bg-primary-green z-10 rounded-full -translate-y-1/2 -start-0;
+    top: 12px;
+  }
 }
 
 @layer components {
